@@ -3,63 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shady Wafik | AI Student Portfolio</title>
+  <title>Shady Wafik | AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
       margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
       padding: 2rem;
     }
-    h1 {
-      color: #38bdf8;
+    section {
+      margin-bottom: 3rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .skills, .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .badge {
+      background: #222;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
     a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    .section {
-      margin-top: 2rem;
+      color: #007bff;
     }
   </style>
 </head>
 <body>
-  <h1>👋 Hi, I'm Shady Wafik</h1>
-  <p>An AI student passionate about embedded systems, robotics, and machine learning. I love building things that live at the intersection of hardware and AI.</p>
-
-  <div class="section">
-    <h2>📌 About Me</h2>
+  <header>
+    <h1>Shady Wafik</h1>
+    <p>AI Student | Embedded Systems Enthusiast | Robotics & Tech Lover</p>
     <p>
-      - Bachelor's in AI, Misr University for Science and Technology<br />
-      - Experienced in Python, C/C++, embedded systems, ML & IoT<br />
-      - GPA: 3.0 — Currently in 6th semester<br />
+      <a href="mailto:shadywafik00@gmail.com">shadywafik00@gmail.com</a> |
+      <a href="https://github.com/Shady106" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/shady-wafik" target="_blank">LinkedIn</a>
     </p>
-  </div>
+  </header>
+  <div class="container">
 
-  <div class="section">
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Python (Scikit-learn, TensorFlow, Pandas)</li>
-      <li>Embedded Systems: Arduino, Raspberry Pi</li>
-      <li>Machine Learning & Data Analysis</li>
-      <li>Cloud: AWS, Azure (basic)</li>
-      <li>Git, Bash, PowerShell</li>
-    </ul>
-  </div>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a curious and ambitious tech mind with a deep love for cars and hands-on problem solving.
+        With strong foundations in Artificial Intelligence, Embedded Systems, and System Administration,
+        I thrive at the intersection of code, hardware, and mechanics — aiming to create real-world impact.
+      </p>
+    </section>
 
-  <div class="section">
-    <h2>🔗 Links</h2>
-    <ul>
-      <li><a href="mailto:shadywafik00@gmail.com">Email</a></li>
-      <li><a href="https://github.com/Shady106" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/shady-wafik" target="_blank">LinkedIn</a></li>
-    </ul>
-  </div>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor's in Information Technology</strong>, Misr University for Science and Technology – Major: AI (2022–Present) – GPA: 3.0</li>
+        <li><strong>High School:</strong> Saint Michael's Convent School, Final Score: 78.54%</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <p>📍 Based in 6th October, Giza – Egypt</p>
-    <p>© 2025 Shady Wafik</p>
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span class="badge">Python</span>
+        <span class="badge">C/C++</span>
+        <span class="badge">TensorFlow</span>
+        <span class="badge">Scikit-learn</span>
+        <span class="badge">Pandas</span>
+        <span class="badge">Git/GitHub</span>
+        <span class="badge">Arduino</span>
+        <span class="badge">Raspberry Pi</span>
+        <span class="badge">VMware</span>
+        <span class="badge">Hyper-V</span>
+        <span class="badge">Linux</span>
+        <span class="badge">AWS</span>
+        <span class="badge">Azure</span>
+        <span class="badge">Bash</span>
+        <span class="badge">PowerShell</span>
+        <span class="badge">Photoshop</span>
+        <span class="badge">Premiere</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <h3>🔧 Hardware</h3>
+      <ul>
+        <li><strong>Bionic Arm:</strong> EMG-controlled prosthetic using Raspberry Pi and MLP neural net.</li>
+        <li><strong>Sumo Robot:</strong> Autonomous Arduino robot with obstacle detection and pushing logic.</li>
+        <li><strong>Chess Clock, RC Car, LCD Snake Game:</strong> Microcontroller-based DIY builds.</li>
+        <li><strong>Road Safety IoT:</strong> Real-time monitoring with sensors and comms.</li>
+        <li><strong>Line Follower, 7-Segment Counter, PCB Power Supply:</strong> Digital + analog hardware design.</li>
+      </ul>
+      <h3>💻 Software</h3>
+      <ul>
+        <li><strong>Student Mental Health Prediction:</strong> Ensemble learning with web interface.</li>
+        <li><strong>Gym Management System:</strong> ERD + MS Access database system.</li>
+        <li><strong>AI Puzzle Solver:</strong> 3x3 board using DFS, BFS, A*, Greedy.</li>
+        <li><strong>Apple Stock Prediction:</strong> ML modeling on 5-year data.</li>
+        <li><strong>Breast Cancer Classifier:</strong> Feature engineering & diagnostics focus.</li>
+        <li><strong>Trigram NLP Model:</strong> Autocomplete + perplexity in Streamlit.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work Experience (Freelance)</h2>
+      <ul>
+        <li><strong>Server Admin:</strong> Windows/Linux (Ubuntu, CentOS), cPanel setup and diagnostics.</li>
+        <li><strong>Cloud & Virtualization:</strong> AWS, Azure, GCP, VirtualBox, VMware, Hyper-V.</li>
+        <li><strong>Scripting & Automation:</strong> Bash, PowerShell, cron jobs, CI/CD basics.</li>
+        <li><strong>Remote Admin:</strong> SSH, RDP for server management.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <div class="languages">
+        <span class="badge">Arabic (Native)</span>
+        <span class="badge">English (B2+)</span>
+        <span class="badge">French (Basic)</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Automotive Passion</h2>
+      <p>
+        Since childhood, I've been passionate about cars and mechanical systems. Influenced by my father's work in automotive maintenance,
+        I deeply understand vehicle technologies, diagnostics, and mechanics. I'm especially interested in merging IT with automotive,
+        like connected vehicles, smart diagnostics, and performance systems.
+      </p>
+    </section>
+
   </div>
+  <footer>
+    <p>Built by Shady Wafik &mdash; 2025</p>
+  </footer>
 </body>
 </html>
