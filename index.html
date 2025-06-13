@@ -234,13 +234,21 @@
 </section>
 </div>
   <footer>
-    <p>Built by Shady Wafik Heshmat Helmy &mdash; 2025</p>
+    <p>© Shady Wafik &mdash; 2025</p>
   </footer>
 
   <script>
+  window.onload = () => {
+    // Restore theme from local storage if available
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+
     function toggleTheme() {
       document.body.classList.toggle('dark');
+      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
     }
+    window.toggleTheme = toggleTheme;
 
     // Typing animation script
     const text = "Shady Wafik Heshmat Helmy";
@@ -253,6 +261,21 @@
       }
     }
     type();
-  </script>
+
+    // Console Easter Egg
+    console.log("%c👋 Hello dev! Welcome to my portfolio.", "color: cyan; font-weight: bold;");
+    console.log("%c💡 Built with pure HTML/CSS/JS – no frameworks.", "color: lime;");
+    console.log("%c🧠 Want to collaborate? → shadywafik00@gmail.com", "color: orange;");
+
+    // Name glow in dark mode
+    const style = document.createElement("style");
+    style.textContent = `
+      body.dark #typed-text {
+        text-shadow: 0 0 8px #00f0ff;
+      }
+    `;
+    document.head.appendChild(style);
+  };
+</script>
 </body>
 </html>
